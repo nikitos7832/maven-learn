@@ -6,15 +6,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class FundamentalsOptionalTask2 {
-    public static void sortMatrixByColumn(int matrix[][], final int columnIndex)
+    public static void sortMatrixByColumn(int[][] matrix, final int columnIndex)
     {
         Arrays.sort(matrix, new Comparator<int[]>() {
             @Override
             public int compare(final int[] row1, final int[] row2) {
-                if (row1[columnIndex] > row2[columnIndex])
-                    return 1;
-                else
-                    return -1;
+                return Integer.compare(row1[columnIndex], row2[columnIndex]);
             }
         });
     }
