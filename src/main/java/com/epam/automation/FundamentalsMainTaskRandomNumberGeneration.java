@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class FundamentalsMainTaskRandomNumberGeneration {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int count = 0;
+        int count;
         System.out.print("Enter count of required random numbers:");
         if (scanner.hasNextInt()){
             count = scanner.nextInt();
